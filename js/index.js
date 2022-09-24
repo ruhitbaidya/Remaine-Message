@@ -40,6 +40,7 @@ function acceptData(){
 
 function displayData(){
     contentStore.innerHTML = '';
+
     dataArr.map((data, index)=>{
         contentStore.innerHTML += `
             <tr id=${index}>
@@ -47,7 +48,7 @@ function displayData(){
                 <td>${data.message}</td>
                 <td><a onclick="deletesFun(this)" href="" class="btn btn-danger">X</a></td>
             </tr>
-        `
+        `;
         
     });
 
@@ -71,7 +72,7 @@ function messageAlert(){
                     new Notification('This Message For You Remaine Message', {
                         body : dates.message
                     });
-                }, 200000);
+                }, 20000);
             }
        });
     })
