@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remaine Message</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="bg-primary d-none" id="start-Page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="button-text">
+                        <button class="btn btn-outline-light">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section >
+        <div class="container">
+            <div class="row bg-primary mb-5">
+                <div class="col-md-12">
+                    <header class="p-2 text-light" >
+                        <h5 class="float-start">Remaine</h5>
+                        <h5 class="float-end"><i class="fa-solid fa-bell"></i></h5>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <form action="#" id="forms">
+                    <div class="col-md-6">
+                        <input type="date" class="form-control mb-4" id="dates">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <textarea placeholder="Write Your message" name="" id="message" cols="30" rows="5" class="form-control"></textarea>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-block mt-4">Set Remaine</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Message</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="show-content">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
