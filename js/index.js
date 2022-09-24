@@ -79,7 +79,7 @@ function messageAlert(){
 
 
 (()=>{
-    dataArr = JSON.parse(localStorage.getItem('infos'));
-    displayData();
+    dataArr = JSON.parse(localStorage.getItem('infos')) || [];
     messageAlert()
+    displayData();
 })();
